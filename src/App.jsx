@@ -11,25 +11,35 @@ import CallToAction from './components/CallToAction/CallToAction';
 import Contact from './components/Contact/Contact';
 import FAQ from './components/FAQ/FAQ';
 import Footer from './components/Footer/Footer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="flex flex-col items-center">
-      <Hero />
-      <Mission />
-      <Services />
-      <Offer />
-      <Benefits />
-      <div className="dark-background flex flex-col items-center">
-        <UseAIConditions />
-        <Consulting />
-        <Cooperation />
-        <CallToAction />
-      </div>
-      <Contact />
-      <FAQ />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div className="flex flex-col items-center">
+              <Hero />
+              <Mission />
+              <Services />
+              <Offer />
+              <Benefits />
+              <div className="dark-background flex flex-col items-center">
+                <UseAIConditions />
+                <Consulting />
+                <Cooperation />
+                <CallToAction />
+              </div>
+              <Contact />
+              <FAQ />
+              <Footer />
+            </div>
+          }
+        ></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
