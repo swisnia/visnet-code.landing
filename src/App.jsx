@@ -15,7 +15,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter basename="/visnet-code.landing">
+    <BrowserRouter>
       <Routes>
         <Route
           path="/"

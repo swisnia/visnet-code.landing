@@ -1,7 +1,7 @@
 {
   "homepage": "https://swisnia.github.io/visnet-code.landing",
   "name": "visnetcode.landing",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
