@@ -1,0 +1,71 @@
+.services {
+  width: 100%;
+  max-width: 1200px;
+  border-bottom: 1px solid #e5e5ec;
+  margin: 5rem 0;
+  padding: 0 1rem;
+}
+.services-title {
+  font-size: 40px;
+}
+.service-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3c414d;
+  margin-top: 0.5rem;
+}
+.middle-service {
+  border-left: 1px solid #e5e5ec;
+  border-right: 1px solid #e5e5ec;
+}
+.service-description {
+  color: #595c62;
+}
+
+/* Animacje */
+@keyframes fadeUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.service {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.service.animate {
+  animation: fadeUp 0.9s ease-out forwards;
+}
+
+.service.animate.delay-1 {
+  animation-delay: 0.3s;
+}
+.service.animate.delay-2 {
+  animation-delay: 0.6s;
+}
+.service.animate.delay-3 {
+  animation-delay: 0.9s;
+}
+
+@media (max-width: 810px) {
+  .services-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .service {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .services {
+    border: none;
+  }
+  .middle-service {
+    border-left: none;
+  }
+}

@@ -1,0 +1,125 @@
+.contact {
+  width: 100%;
+  max-width: 1200px;
+  padding: 5rem 0;
+  margin-top: 305px;
+  display: flex;
+  padding: 0 1rem;
+}
+.contact-header-question {
+  font-size: 16px;
+  color: #1b36c1;
+}
+.contact-header-title {
+  font-size: 36px;
+}
+.contact-header-item-row {
+  display: flex;
+  align-items: center;
+}
+.contact-header-whats-next {
+  margin: 1.5rem 0 1rem;
+  font-size: 16px;
+}
+.contact-header-item-row {
+  margin-bottom: 1.75rem;
+}
+.contact-header-item-txt {
+  font-size: 16px;
+  margin-left: 1rem;
+  color: #010430;
+}
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 540px;
+}
+.contact-form label {
+  font-size: 16px;
+  margin-bottom: 0.3rem;
+  color: #4b4e57;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #eaeaea;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.contact-form button {
+  padding: 0.75rem;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  max-width: 250px;
+}
+.contact-form button:hover {
+  cursor: pointer;
+}
+.outer-ring,
+.inner-ring {
+  position: absolute;
+  border: 4px solid transparent;
+  border-top-color: #1b36c1;
+  border-bottom-color: #1b36c1;
+  border-radius: 50%;
+}
+
+.outer-ring {
+  width: 100%;
+  height: 100%;
+}
+
+.inner-ring {
+  width: 70%;
+  height: 70%;
+  top: 15%;
+  left: 15%;
+}
+#rodoConsent {
+  width: 80px;
+  height: 16px;
+  margin-top: 4px;
+}
+.text-small {
+  font-size: 0.75rem !important;
+  line-height: 1.5rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.animate-spin-reverse {
+  animation: spin-reverse 1s linear infinite;
+}
+
+@media (max-width: 810px) {
+  .contact {
+    flex-direction: column;
+  }
+  .contact-form {
+    max-width: none;
+  }
+}

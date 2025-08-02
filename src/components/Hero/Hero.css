@@ -1,0 +1,125 @@
+.navbar {
+  z-index: 2;
+}
+
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('../../assets/hero-background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.hero-content {
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  max-width: 1200px;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+.hero-left {
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.hero-title {
+  line-height: 1.3;
+}
+.hero-description {
+  color: #656275;
+}
+.hero-action-btn {
+  height: 3rem;
+  border-radius: 2rem;
+  padding: 0 1.5rem;
+  background-color: #000000;
+  width: fit-content;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-action-btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.hero-image {
+  width: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInTop {
+  from {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.initial {
+  opacity: 0;
+}
+
+.hero-left.animate {
+  animation: slideInLeft 0.6s ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+.hero-right.animate {
+  animation: slideInRight 0.6s ease-out forwards;
+  animation-delay: 0.1s;
+}
+
+.navbar.animate {
+  animation: slideInTop 0.6s ease-out forwards;
+  animation-delay: 0.8s;
+}
+
+@media (max-width: 810px) {
+  .hero-right {
+    display: none;
+  }
+  .hero-content {
+    display: flex;
+  }
+  .hero-left {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .navbar {
+    height: 64px;
+  }
+}

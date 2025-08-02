@@ -1,0 +1,107 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cooperation {
+  width: 100%;
+  max-width: 1200px;
+  margin: 8rem auto 9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding: 0 1rem;
+}
+
+.cooperation-header {
+  max-width: 25rem;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.cooperation-header.animate {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.cooperation-title {
+  font-size: 40px;
+}
+
+.cooperation-description {
+  margin-top: 0.5rem;
+  font-size: 16px;
+  color: #f7f7fa;
+}
+
+.cooperation-steps {
+  flex: 1;
+}
+
+.cooperation-step {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #9194ca2b;
+  margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.cooperation-step.animate {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.cooperation-step-number {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: #e5e5ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3c414d;
+}
+
+.cooperation-step-title {
+  margin-top: 1rem;
+  font-size: 28px;
+}
+
+.cooperation-step-description {
+  margin-top: 0.5rem;
+  font-size: 16px;
+  color: #f7f7fa;
+}
+
+.delay-1.animate {
+  animation-delay: 0.2s;
+}
+.delay-2.animate {
+  animation-delay: 0.4s;
+}
+.delay-3.animate {
+  animation-delay: 0.6s;
+}
+.delay-4.animate {
+  animation-delay: 0.8s;
+}
+.delay-5.animate {
+  animation-delay: 1s;
+}
+.delay-6.animate {
+  animation-delay: 1.2s;
+}
+
+@media (max-width: 810px) {
+  .cooperation-header {
+    max-width: none;
+  }
+  .cooperation {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

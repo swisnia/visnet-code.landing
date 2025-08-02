@@ -1,0 +1,35 @@
+.burger-btn {
+  cursor: pointer;
+}
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  padding: 0 1rem;
+  transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+  z-index: 50;
+}
+
+.mobile-menu.open {
+  max-height: 300px;
+  opacity: 1;
+  padding: 1rem;
+}
+
+.menu-link {
+  display: flex;
+  padding: 0.5rem 0;
+  color: #4b5563;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.menu-link:hover {
+  color: #000000;
+}
