@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/swisnia/visnet-code.landing",
+  "homepage": "https://swisnia.github.io/visnet-code.landing/",
   "name": "visnetcode.landing",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "vite build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
