@@ -1,5 +1,5 @@
 import './Contact.css';
-import star from '../../assets/star.png';
+import star from '../../assets/star.webp';
 import { useEffect, useState } from 'react';
 import { send, init } from '@emailjs/browser';
 import { IconCircleCheck, IconAlertCircle } from '@tabler/icons-react';
@@ -70,7 +70,7 @@ function Contact() {
           <div className="contact-header-item-row">
             <img src={star} alt="star" />
             <p className="contact-header-item-txt">
-              Skontaktujemy się z Tobą w ciągu 48 godzin.
+              Skontaktujemy się z Tobą w ciągu 24 godzin
             </p>
           </div>
 
@@ -84,7 +84,7 @@ function Contact() {
           <div className="contact-header-item-row">
             <img src={star} alt="star" />
             <p className="contact-header-item-txt">
-              Przygotujemy spersonalizowaną ofertę dla Twojej firmy.
+              Przygotujemy spersonalizowaną ofertę dla Twojej firmy
             </p>
           </div>
         </div>

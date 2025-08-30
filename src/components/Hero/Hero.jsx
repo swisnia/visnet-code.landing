@@ -1,6 +1,6 @@
 import Navbar from '../Navbar/Navbar';
 import './Hero.css';
-import heroImage from '../../assets/hero-1.png';
+import heroImage from '../../assets/hero-1.webp';
 import { useEffect, useRef } from 'react';
 import MobileNavbar from '../NavbarMobile/MobileNavbar';
 
@@ -35,11 +35,11 @@ function Hero() {
       <div className="hero-content grid grid-cols-2">
         <div ref={leftRef} className="hero-left initial flex">
           <h1 className="text-5xl hero-title">
-            Wykorzystaj pełny potencjał swojej firmy dzięki AI
+            Rozwiązania AI dla małych firm
           </h1>
           <p className="hero-description">
-            Pomagamy firmom w osiąganiu przewagi rynkowej dzięki inteligentnym
-            rozwiązaniom AI.
+            Pomagamy firmom w osiąganiu przewagi rynkowej przy użyciu sztucznej
+            inteligencji
           </p>
           <a href="#contact" className="hero-action-btn">
             Umów się na bezpłatną konsultację

@@ -1,27 +1,27 @@
 import './Benefits.css';
 import {
-  IconBrandZapier,
+  IconCoins,
   IconShieldLock,
   IconClockCheck,
-  IconChartArrowsVertical,
+  IconBrain,
   IconChartColumn,
 } from '@tabler/icons-react';
 
 function Benefits() {
   return (
     <div className="benefits">
-      <h2 className="benefits-title">Korzyści wewnętrznego systemu AI</h2>
+      <h2 className="benefits-title">Korzyści własnego systemu AI</h2>
       <p className="benefits-title-description">
         Wdrażając nasze oprogramowanie, zyskujesz więcej niż tylko nowoczesne
         narzędzie – zyskujesz partnera, który pomoże Ci w pełni wykorzystać
-        potencjał sztucznej inteligencji w Twojej firmie.
+        potencjał sztucznej inteligencji w Twojej firmie
       </p>
       <div className="benefits-container">
         <div className="benefits-item benefits-item-border-r benefits-item-border-b">
-          <IconBrandZapier stroke={1.5} color="#1B36C1" size={28} />
-          <h3 className="benefits-item-title">Automatyzacja</h3>
+          <IconCoins stroke={1.5} color="#1B36C1" size={28} />
+          <h3 className="benefits-item-title">Redukcja kosztów</h3>
           <p className="benefits-item-description">
-            Zredukuj czas i koszty dzięki automatyzacji rutynowych działań.
+            Zredukuj koszty dzięki automatyzacji rutynowych zadań
           </p>
         </div>
 
@@ -30,7 +30,7 @@ function Benefits() {
           <h3 className="benefits-item-title">Bezpieczeństwo</h3>
           <p className="benefits-item-description">
             Zabezpiecz swoje dane uruchamiając modele AI na własnej
-            infrastrukturze..
+            infrastrukturze
           </p>
         </div>
 
@@ -38,17 +38,17 @@ function Benefits() {
 
         <div className="benefits-item benefits-item-border-r">
           <IconClockCheck stroke={1.5} color="#1B36C1" size={28} />
-          <h3 className="benefits-item-title">Zwiększenie efektywności</h3>
+          <h3 className="benefits-item-title">Oszczędność czasu</h3>
           <p className="benefits-item-description">
-            Usprawnij operacje i zyskaj lepsze wyniki w krótszym czasie.
+            Zautomatyzuj czasochłonne zadania i skup się na rozwoju biznesu
           </p>
         </div>
 
         <div className="benefits-item benefits-item-border-r">
-          <IconChartArrowsVertical stroke={1.5} color="#1B36C1" size={28} />
-          <h3 className="benefits-item-title">Skalowalność</h3>
+          <IconBrain stroke={1.5} color="#1B36C1" size={28} />
+          <h3 className="benefits-item-title">Lepsze decyzje</h3>
           <p className="benefits-item-description">
-            Zainwestuj w oprogramowanie, które rośnie razem z Twoim biznesem.
+            Wykorzystaj dane i analizy do podejmowania bardziej trafnych decyzji
           </p>
         </div>
 
@@ -56,7 +56,7 @@ function Benefits() {
           <IconChartColumn stroke={1.5} color="#1B36C1" size={28} />
           <h3 className="benefits-item-title">Przewaga konkurencyjna</h3>
           <p className="benefits-item-description">
-            Zyskaj przewagę i wyróżnij się na tle konkurencji.
+            Zyskaj przewagę konkurencyjną dzięki innowacyjnym rozwiązaniom AI
           </p>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import './Consulting.css';
-import consulting0 from '../../assets/consulting-0.png';
+import consulting0 from '../../assets/consulting-0.webp';
 import { IconTrendingUp, IconBulb, IconChecklist } from '@tabler/icons-react';
 import { useEffect, useRef } from 'react';
 
@@ -30,16 +30,16 @@ function Consulting() {
 
   const infoItems = [
     {
+      icon: <IconChecklist stroke={1} size={32} className="mb-4" />,
+      text: 'Zweryfikujesz wiedzę i umiejętności konsultanta',
+    },
+    {
       icon: <IconTrendingUp stroke={1} size={32} className="mb-4" />,
-      text: 'Dowiesz się, jak zastosować AI, by usprawnić swoje działania.',
+      text: 'Dowiesz się, jak zastosować AI, by usprawnić swoje działania',
     },
     {
       icon: <IconBulb stroke={1} size={32} className="mb-4" />,
-      text: 'Skonsultujesz swoje pomysły z ekspertami w dziedzinie AI.',
-    },
-    {
-      icon: <IconChecklist stroke={1} size={32} className="mb-4" />,
-      text: 'Po spotkaniu otrzymasz spersonalizowaną ofertę.',
+      text: 'Skonsultujesz swoje pomysły z ekspertem w dziedzinie AI',
     },
   ];
 
@@ -52,8 +52,8 @@ function Consulting() {
             Umów się na bezpłatną konsultacje
           </h2>
           <p className="consulting-description">
-            Nasz zespół pomoże Ci zrozumieć, jak AI może usprawnić Twój biznes i
-            zwiększyć jego konkurencyjność.
+            Nasz specjalista pomoże Ci zrozumieć, jak AI może usprawnić Twój
+            biznes i zwiększyć jego konkurencyjność
           </p>
         </div>
       </div>

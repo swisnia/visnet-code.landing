@@ -12,8 +12,22 @@ import Contact from './components/Contact/Contact';
 import FAQ from './components/FAQ/FAQ';
 import Footer from './components/Footer/Footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowButton(window.scrollY > 300);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
@@ -35,6 +49,15 @@ function App() {
               <Contact />
               <FAQ />
               <Footer />
+              {showButton && (
+                <button
+                  onClick={scrollToTop}
+                  className="floating-button"
+                  aria-label="Scroll to top"
+                >
+                  <span className="arrow-up">↑</span>
+                </button>
+              )}
             </div>
           }
         ></Route>

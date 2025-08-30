@@ -88,11 +88,10 @@
 #rodoConsent {
   width: 80px;
   height: 16px;
-  margin-top: 4px;
 }
 .text-small {
-  font-size: 0.75rem !important;
-  line-height: 1.5rem;
+  font-size: 0.7rem !important;
+  line-height: 1rem;
 }
 
 @keyframes spin {

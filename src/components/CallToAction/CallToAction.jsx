@@ -1,5 +1,4 @@
 import './CallToAction.css';
-import { IconArrowNarrowRight } from '@tabler/icons-react';
 import { useEffect, useRef, useState } from 'react';
 
 function CallToAction() {
@@ -28,11 +27,29 @@ function CallToAction() {
 
   const startTyping = () => {
     let index = 0;
-    const interval = setInterval(() => {
-      setVisibleLetters(index + 1);
-      index++;
-      if (index >= fullText.length) clearInterval(interval);
-    }, 50);
+    let lastTimestamp = null;
+
+    function typeStep(timestamp) {
+      if (!lastTimestamp) lastTimestamp = timestamp;
+      const elapsed = timestamp - lastTimestamp;
+
+      if (elapsed > 50) {
+        setVisibleLetters((prev) => {
+          if (prev < fullText.length) {
+            index = prev + 1;
+            return index;
+          }
+          return prev;
+        });
+        lastTimestamp = timestamp;
+      }
+
+      if (index < fullText.length) {
+        requestAnimationFrame(typeStep);
+      }
+    }
+
+    requestAnimationFrame(typeStep);
   };
 
   return (
@@ -57,7 +74,6 @@ function CallToAction() {
 
       <a href="#contact" className="cta-button flex items-center">
         Umów się na bezpłatną konsultację
-        <IconArrowNarrowRight className="ml-1" color="#41434f" stroke={1.5} />
       </a>
     </div>
   );

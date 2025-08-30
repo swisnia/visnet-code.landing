@@ -1,5 +1,5 @@
 import './Services.css';
-import { IconBulb, IconHeadset, IconCode } from '@tabler/icons-react';
+import { IconSearch, IconHeadset, IconCode } from '@tabler/icons-react';
 import { useEffect, useRef } from 'react';
 
 function Services() {
@@ -35,19 +35,19 @@ function Services() {
       <div className="services-container mt-16 grid grid-cols-3">
         {[
           {
-            icon: <IconCode stroke={1.2} size={56} className="mb-8" />,
-            title: 'Systemy AI',
-            desc: 'Tworzymy i wdrażamy zaawansowane systemy AI, które automatyzują procesy biznesowe.',
+            icon: <IconCode stroke={1.2} size={48} className="mb-8" />,
+            title: 'Systemy AI szyte na miarę',
+            desc: 'Tworzymy indywidualne rozwiązania AI dopasowane do twoich potrzeb i budżetu',
           },
           {
-            icon: <IconHeadset stroke={1.2} size={56} className="mb-8" />,
+            icon: <IconSearch stroke={1.2} size={48} className="mb-8" />,
+            title: 'Audyty AI',
+            desc: 'Sprawdzimy, gdzie w Twojej firmie AI przyniesie największe korzyści',
+          },
+          {
+            icon: <IconHeadset stroke={1.2} size={48} className="mb-8" />,
             title: 'Doradztwo i szkolenia',
-            desc: 'Oferujemy kompleksowe doradztwo w zakresie AI oraz szkolenia dla zespołów.',
-          },
-          {
-            icon: <IconBulb stroke={1.2} size={56} className="mb-8" />,
-            title: 'Mentoring',
-            desc: 'Pomagamy w rozwoju projektów AI, oferując mentoring i wsparcie techniczne.',
+            desc: 'Pomagamy w rozwoju projektów AI, oferując mentoring i wsparcie techniczne',
           },
         ].map((item, index) => (
           <div

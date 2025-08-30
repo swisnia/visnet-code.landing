@@ -17,7 +17,7 @@ function Navbar() {
             Kontakt
             <IconArrowNarrowRight
               className="ml-1"
-              color="#C2C4DB"
+              color="#292929"
               stroke={1.5}
             />
           </a>

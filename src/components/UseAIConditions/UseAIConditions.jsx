@@ -32,10 +32,10 @@ function UseAIConditions() {
   }, []);
 
   const items = [
-    'Twoja firma gromadzi dużo danych',
-    'Procesy wymagają wykonywania rutynowych działań, które można zautomatyzować',
-    'Przetwarzane dane są poufne i nie mogą zostać wprowadzone do rozwiązań dostępnych na rynku',
-    'Jesteś gotowy na stworzenie zaplecza technicznego potrzebnego do utrzymania modeli',
+    'Chcesz zoptymalizować koszty i zwiększyć efektywność',
+    'Szukasz przewagi konkurencyjnej na rynku',
+    'Potrzebujesz rozwiązania dostosowanego dokładnie do swoich unikalnych procesów',
+    'Chcesz zwiększyć satysfakcję klientów i poprawić jakość obsługi',
   ];
 
   return (
@@ -44,8 +44,8 @@ function UseAIConditions() {
         Kiedy warto wprowadzić własny system AI?
       </h2>
       <p className="use-ai-description header" ref={descRef}>
-        Nasi specjaliści dokładnie przeanalizują Twoje potrzeby, odpowiedzą na
-        pytania i zaproponują najlepsze rozwiązania dostosowane do specyfiki
+        Nasz specjalista dokładnie przeanalizuje Twoje potrzeby, odpowie na
+        pytania i zaproponuje najlepsze rozwiązanie dostosowane do specyfiki
         Twojego biznesu
       </p>
       <div className="use-ai-container">

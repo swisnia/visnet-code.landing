@@ -5,7 +5,7 @@ const questions = [
   {
     question: 'Czy wdrożenie AI jest bezpieczne dla moich danych?',
     answer:
-      'Tak, nasze lokalne systemy AI działają na wewnętrznych danych Twojej firmy, eliminując ryzyko udostępniania wrażliwych informacji osobom trzecim. Dbamy o najwyższe standardy bezpieczeństwa.',
+      'Tak, wdrożenie AI jest całkowicie bezpieczne dla Twoich danych. Możemy uruchomić systemy lokalnie na infrastrukturze Twojej firmy lub zastosować zaawansowane filtry danych wrażliwych, co eliminuje ryzyko udostępniania poufnych informacji osobom trzecim. Dbamy o najwyższe standardy bezpieczeństwa.',
   },
   {
     question: 'Jakie korzyści przynosi wdrożenie AI w mojej firmie?',
@@ -20,7 +20,7 @@ const questions = [
   {
     question: 'Jak długo trwa proces wdrożenia AI?',
     answer:
-      'Czas wdrożenia zależy od specyfiki projektu i potrzeb Twojej firmy. Po dokładnej analizie, przygotujemy harmonogram wdrożenia dostosowany do Twoich wymagań.',
+      'Czas wdrożenia zależy od specyfiki projektu i potrzeb Twojej firmy. Po dokładnej analizie, przedstawimy Ci terminy realizacji.',
   },
 ];
 

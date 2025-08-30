@@ -29,9 +29,9 @@ function Cooperation() {
   const steps = [
     {
       number: '01',
-      title: 'Spotkanie wstępne',
+      title: 'Analiza potrzeb',
       description:
-        'Podczas spotkania online omówimy problem, dostępne możliwość i oczekiwane rezultaty',
+        'Określimy gdzie AI przyniesie największe korzyści dla Twojego biznesu',
     },
     {
       number: '02',
@@ -41,23 +41,24 @@ function Cooperation() {
     {
       number: '03',
       title: 'Tworzenie rozwiązania',
-      description: 'Przystąpimy do tworzenia pierwszej wersji rozwiązania',
+      description: 'Stworzymy rozwiązanie dopasowane do Twoich potrzeb',
     },
     {
       number: '04',
-      title: 'Demo produktu',
+      title: 'Wdrożenie i integracja',
       description:
-        'Zademonstrujemy Ci pierwszą wersję rozwiązania i omówimy Twoje uwagi',
+        'Wdrożymy i zintegrujemy rozwiązanie z istniejącymi procesami Twojej firmy',
     },
     {
       number: '05',
-      title: 'Iteracja i testowanie',
-      description: 'Wprowadzimy poprawki i przetestujemy system',
+      title: 'Szkolenie zespołu',
+      description:
+        'Przeszkolimy Twój zespół, aby maksymalnie wykorzystać nowe rozwiązanie',
     },
     {
       number: '06',
-      title: 'Wdrożenie systemu',
-      description: 'Uruchomimy system w Twojej firmie!',
+      title: 'Wsparcie po wdrożeniu',
+      description: 'Będziemy dostępni do pomocy i wsparcia technicznego',
     },
   ];
 
@@ -69,7 +70,7 @@ function Cooperation() {
         </h2>
         <p className="cooperation-description">
           Zajmujemy się wszystkim, od pomysłu po finalny produkt. Pomożemy Ci
-          zdefiniować potrzeby i znaleźć najlepsze rozwiązanie.
+          zdefiniować potrzeby i znaleźć najlepsze rozwiązanie
         </p>
       </div>
 
